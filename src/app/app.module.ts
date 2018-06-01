@@ -4,6 +4,8 @@ import { NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { SiteModule } from './site/site.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    AppRoutingModule,
+    SiteModule
   ],
   providers: [],
   bootstrap: [AppComponent],
